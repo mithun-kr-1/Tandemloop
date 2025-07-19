@@ -1,6 +1,6 @@
-function generateOddNumbers(a) {
-     
+function odd(a) {
      const count = parseInt(a);
+     
      const oddNumbers = [];
      
      for (let i = 1; i <= count; i++) {
@@ -11,14 +11,15 @@ function generateOddNumbers(a) {
      return oddNumbers;
  }
  
- function testProblem2() {
-     
+ function aodd() {
+
      const testCases = [1, 2, 3, 4, 5, 10];
      
      testCases.forEach(testCase => {
-         const result = generateOddNumbers(testCase);
-         console.log(`input a = ${testCase}, then output : ${result.join(', ')}`);
+         const result = odd(testCase);
+         console.log(` input a = ${testCase}, then output : ${result.join(', ')}`);
      });
  }
  
- testProblem2();
+ aodd();
+ 

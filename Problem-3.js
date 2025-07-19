@@ -1,5 +1,6 @@
-function generateOddNumbersPattern(a) {
+function oddp(a) {
      const input = parseInt(a);
+     
      let count;
      
      if (input % 2 === 1) {
@@ -9,7 +10,6 @@ function generateOddNumbersPattern(a) {
      }
      
      const oddNumbers = [];
-     
      for (let i = 1; i <= count; i++) {
          const oddNumber = 2 * i - 1;
          oddNumbers.push(oddNumber);
@@ -17,13 +17,9 @@ function generateOddNumbersPattern(a) {
      
      return oddNumbers;
  }
-
- function generateOddNumbersPatternAlternative(a) {
+ 
+ function oddpp(a) {
      const input = parseInt(a);
-     
-     if (isNaN(input) || input <= 0) {
-         return "Error: Please enter a positive integer";
-     }
      
      const targetCount = input % 2 === 0 ? input - 1 : input;
      
@@ -38,15 +34,15 @@ function generateOddNumbersPattern(a) {
      return oddNumbers;
  }
  
- function testProblem3() {
-     console.log("Problem 3: Generate Odd Numbers with Pattern");
-     
+ function odd() {
+    
      const testCases = [1, 2, 3, 4, 5, 6, 7, 8, 10];
      
      testCases.forEach(testCase => {
-         const result = generateOddNumbersPattern(testCase);
-         console.log(`input a = ${testCase}, then output : ${result.join(', ')}`);
+         const result = oddp(testCase);
+         console.log(` input a = ${testCase}, then output : ${result.join(', ')}`);
      });
  }
  
- testProblem3();
+ odd();
+ 

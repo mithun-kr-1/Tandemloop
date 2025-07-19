@@ -30,7 +30,7 @@ class Calculator {
      }
  }
 
- function testCalculator() {
+ function aCalculator() {
      const calc = new Calculator();
      
      console.log("Addition: 10 + 5 =", calc.calculate(10, 5, "addition"));
@@ -40,4 +40,4 @@ class Calculator {
      console.log("Decimal: 10.5 + 2.3 =", calc.calculate(10.5, 2.3, "addition"));
  }
 
- testCalculator();
+aCalculator();

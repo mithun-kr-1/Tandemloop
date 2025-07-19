@@ -1,4 +1,4 @@
-function countMultiples(inputArray) {
+function multiple(inputArray) {
 
      const numbers = inputArray
          .map(item => parseInt(item))
@@ -20,15 +20,15 @@ function countMultiples(inputArray) {
      return result;
  }
  
- function testProblem4() {
+ function multi() {
      
      const testArray = [1, 2, 8, 9, 12, 46, 76, 82, 15, 20, 30];
      
-     const result1 = countMultiples(testArray);
+     const result1 = multiple(testArray);
      
      console.log(`input: [${testArray.join(',')}]`);
      console.log("Output:");
      console.log(result1);
  }
  
- testProblem4();
+ multi();
